@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "re-route",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "run_at": "document_start",
+      "js": ["script.js"]
+    }
+  ],
+  "web_accessible_resources": ["strong.html"]
+}
